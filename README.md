@@ -27,7 +27,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ### Installing dependencies
 
 ```bash
-pnpm install
+npm install
 ```
 
 ### Running the app
@@ -35,13 +35,13 @@ pnpm install
 First, run the development server:
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
 ### Building for production
 
 ```bash
-pnpm run build
+npm run build
 ```
 
 
