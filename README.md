@@ -8,9 +8,6 @@ This template provides a minimal setup to get React working in Vite with HMR and
 <!-- markdownlint-disable MD041 -->
 <!-- markdownlint-disable MD029 -->
 
-<div align="center">
-
-
 <details>
   <summary>Table of Contents</summary>
 
