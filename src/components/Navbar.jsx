@@ -4,14 +4,14 @@ import { IoCallOutline } from "react-icons/io5";
 import { IoIosUnlock } from "react-icons/io";
 import { ImPower } from "react-icons/im";
 import { MdKeyboardArrowRight, MdMenu, MdClose } from "react-icons/md";
-import { FaArrowRightLong } from "react-icons/fa6";
 import "./Navbar.css";
+import Button from "./Button.jsx";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-black text-white p-4 flex justify-between items-center">
+    <nav className="bg-black text-white p-4 flex justify-between items-center sticky top-0 z-10">
       {/* Left Side: Logo */}
       <div className="flex items-center space-x-2 w-[120px] h-[40px]">
         <img src="src/images/logo.png" alt="Logo" />
@@ -73,12 +73,7 @@ const Navbar = () => {
       </div>
 
       {/* Right Side: Let's Start Button - Hidden on smaller screens */}
-      <div className="hidden lg:flex">
-        <button className="bg-teal-400 text-black rounded-full px-6 py-2 hover:bg-teal-500 flex items-center gap-x-2">
-          <span>LET'S START - IT'S FREE</span>
-          <FaArrowRightLong />
-        </button>
-      </div>
+      <Button btnname={"LET'S START -ITS FREE "} />
 
       {/* Hamburger Icon for Mobile */}
       <div className="lg:hidden">
