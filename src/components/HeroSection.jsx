@@ -54,8 +54,6 @@ const HeroSection = () => {
           neque suscipit pariatur saepe necessitatibus.
         </marquee>
 
-      
-
         <img
           src="src/images/backgrand-img.png"
           style={{
@@ -68,27 +66,28 @@ const HeroSection = () => {
           }}
         />
       </div>
-     {/* Text above image */}
-<div className="border border-white w-[90vw] md:w-[368px] text-white bg-black h-auto p-4 rounded-3xl absolute left-[10vw] md:left-[76px] top-[60vh] md:top-[1300px] z-10">
-  <h3 className="text-2xl md:text-3xl"># 1 Dev Stories Platform in World</h3>
-  <div className="flex y mt-2">
-    <img src="src/images/one.jpg" className="w-12 rounded-full h-11" />
-    <img src="src/images/second.jpg" className="w-12 rounded-full h-11" />
-    <img src="src/images/thrid.jpg" className="w-12 rounded-full h-11" />
-    <img src="src/images/fourth.jpg" className="w-12 rounded-full h-11" />
-    <div className="flex flex-col ">
-      <div className="flex text-customOrange">
-        <FaStar />
-        <FaStar />
-        <FaStar />
-        <FaStar />
+      {/* Text above image */}
+      <div className="border border-white w-fit  text-white bg-black h-auto p-4 rounded-3xl absolute left-[76px] right-[756px] b[] top-[1099px] z-10">
+        <h3 className="text-2xl md:text-3xl">
+          # 1 Dev Stories Platform <br />
+          in World
+        </h3>
+        <div className="flex y mt-2">
+          <img src="src/images/one.jpg" className="w-12 rounded-full h-11" />
+          <img src="src/images/second.jpg" className="w-12 rounded-full h-11" />
+          <img src="src/images/thrid.jpg" className="w-12 rounded-full h-11" />
+          <img src="src/images/fourth.jpg" className="w-12 rounded-full h-11" />
+          <div className="flex flex-col ">
+            <div className="flex text-customOrange">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <div>200+ 5-star reviews</div>
+          </div>
+        </div>
       </div>
-      <div>200+ 5-star reviews</div>
-    </div>
-  </div>
-</div>
-
-
     </div>
   );
 };
