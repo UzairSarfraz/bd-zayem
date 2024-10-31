@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
       },
+      colors: {
+        customOrange: '#FF8442', // Define a custom color name like 'customOrange'
+      },
     },
   },
   plugins: [],
