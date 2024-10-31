@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button.jsx";
+import { FaStar } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -15,7 +16,7 @@ const HeroSection = () => {
           <img
             src="src/images/speaker.png"
             alt="Speaker Icon"
-            className="inline-block size-16  bg-[#2ABAB1] rounded-full p-1 mx-2 align-middle mb-4"
+            className="inline-block size-16 bg-[#2ABAB1] rounded-full p-1 mx-2 align-middle mb-4"
           />{" "}
           Platform.
         </h1>
@@ -36,14 +37,14 @@ const HeroSection = () => {
         }}
       >
         <marquee
-          className="text-5xl font-bold mt-12"
+          className="text-[100px] font-bold mt-8"
           style={{
             position: "absolute",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            zIndex: 1, // Lower z-index to place it behind the image
-            width: "100%", // Adjust width as needed
+            zIndex: 1,
+            width: "100%",
             textAlign: "center",
           }}
         >
@@ -52,17 +53,42 @@ const HeroSection = () => {
           dolores aperiam facere ducimus! Inventore voluptatibus, molestias
           neque suscipit pariatur saepe necessitatibus.
         </marquee>
+
+      
+
         <img
           src="src/images/backgrand-img.png"
-          className="{}"
           style={{
             position: "relative",
-            zIndex: 2, // Higher z-index to place it above the marquee
+            width: "100%", // Wrap percentage values in quotes
+            height: "100vh", // Wrap "100vh" in quotes
+            zIndex: 2,
             display: "block",
-            margin: "0 auto", // Center the image horizontally
+            margin: "0 auto",
           }}
         />
       </div>
+     {/* Text above image */}
+<div className="border border-white w-[90vw] md:w-[368px] text-white bg-black h-auto p-4 rounded-3xl absolute left-[10vw] md:left-[76px] top-[60vh] md:top-[1300px] z-10">
+  <h3 className="text-2xl md:text-3xl"># 1 Dev Stories Platform in World</h3>
+  <div className="flex y mt-2">
+    <img src="src/images/one.jpg" className="w-12 rounded-full h-11" />
+    <img src="src/images/second.jpg" className="w-12 rounded-full h-11" />
+    <img src="src/images/thrid.jpg" className="w-12 rounded-full h-11" />
+    <img src="src/images/fourth.jpg" className="w-12 rounded-full h-11" />
+    <div className="flex flex-col ">
+      <div className="flex text-customOrange">
+        <FaStar />
+        <FaStar />
+        <FaStar />
+        <FaStar />
+      </div>
+      <div>200+ 5-star reviews</div>
+    </div>
+  </div>
+</div>
+
+
     </div>
   );
 };
